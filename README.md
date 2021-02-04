@@ -4,5 +4,7 @@ This is noise synthesis tool. It is automatically downloaded noise in diverse en
 ## Usage
 
 ## Aspect
+You can check each noise detailed aspect in [paper].
 
 [DEMAND]: https://zenodo.org/record/1227121#.YBu28egzbZR
+[paper]: https://asa.scitation.org/doi/pdf/10.1121/1.4799597
