@@ -13,6 +13,7 @@ pip install wget librosa numpy
 
 When training
 - Pytorch
+
 You can install [pytorch] depending on environments.
 
 ## Usage
