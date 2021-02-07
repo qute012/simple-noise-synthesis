@@ -29,11 +29,13 @@ def download(path):
         'https://zenodo.org/record/1227121/files/TCAR_16k.zip?download=1',
     ]
     print('total noise dataset number: {}'.format(len(url_list)))
-    for url in url_list:
+    for i, url in enumerate(url_list):
+        print('{}. {} noise dataset'.format(i, url.split('/')[-1].split('.')[0].split('_')[0]))
         wget.download(url, out=path, bar=log)
-    tmps = glob('./*.tmp')
-    for tmp in tmps:
-        os.remove(tmp)
+        print('\n')
+    #tmps = glob('./*.tmp')
+    #for tmp in tmps:
+    #    os.remove(tmp)
         
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='End-to-End Speech Recognition Training')
