@@ -6,9 +6,10 @@ You can download belows using pip.
 - wget
 - librosa
 - numpy
+- zipfile
 
 ```
-pip install wget librosa numpy
+pip install wget librosa numpy zipfile
 ```
 
 When training
@@ -17,6 +18,10 @@ When training
 You can install [pytorch] depending on environments.
 
 ## Usage
+Default path is automatically created as noise_dataset directory.
+```
+python download.py [--path]
+```
 
 ## Aspect
 You can check each noise detailed aspect in [paper].
