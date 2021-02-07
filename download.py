@@ -2,6 +2,7 @@ import wget
 import argparse
 import os
 import math
+import zipfile
 
 def log(current, total, width=100):
     unit = 1000000
@@ -29,9 +30,15 @@ def download(path):
     ]
     print('total noise dataset number: {}'.format(len(url_list)))
     for i, url in enumerate(url_list):
-        print('{}. {} noise dataset'.format(i+1, url.split('/')[-1].split('.')[0].split('_')[0]))
+        target =  url.split('/')[-1].split('.')[0]
+        print('{}. {} noise dataset'.format(i+1,target))
         wget.download(url, out=path, bar=log)
-        print('\n')
+        target = os.path.join(path,'{}.zip'.format(target))
+        print('\nunzip {}'.format(target))
+        zip_file = zipfile.ZipFile(target)
+        zip_file.extractall(path)
+        zip_file.close()
+        os.remove(target)
         
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='End-to-End Speech Recognition Training')
