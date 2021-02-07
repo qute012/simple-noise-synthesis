@@ -1,0 +1,9 @@
+profile_default/
+ipython_config.py
+kosr.egg-info
+build
+dist
+.ipynb_checkpoints
+__pycache__
+*.ipynb
+noise_dataset/
