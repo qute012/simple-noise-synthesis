@@ -17,6 +17,10 @@ When training
 You can install [pytorch] depending on environments.
 
 ## Usage
+Default path is automatically created as noise_dataset directory.
+```
+python download.py [--path]
+```
 
 ## Aspect
 You can check each noise detailed aspect in [paper].
