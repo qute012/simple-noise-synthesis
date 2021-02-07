@@ -13,7 +13,7 @@ pip install wget librosa numpy zipfile
 ```
 
 When training
-- Pytorch
+- pytorch
 - torchaudio
 
 You can install [pytorch] depending on environments.
