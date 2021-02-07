@@ -2,6 +2,7 @@ import wget
 import argparse
 import os
 import math
+from glob import glob
 
 def log(current, total, width=100):
     unit = 1000000
@@ -30,6 +31,9 @@ def download(path):
     print('total noise dataset number: {}'.format(len(url_list)))
     for url in url_list:
         wget.download(url, out=path, bar=log)
+    tmps = glob('./*.tmp')
+    for tmp in tmps:
+        os.remove(tmp)
         
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='End-to-End Speech Recognition Training')
