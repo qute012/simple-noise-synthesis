@@ -6,9 +6,10 @@ You can download belows using pip.
 - wget
 - librosa
 - numpy
+- zipfile
 
 ```
-pip install wget librosa numpy
+pip install wget librosa numpy zipfile
 ```
 
 When training
