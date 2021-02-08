@@ -13,3 +13,10 @@ def _rate(sig, snr):
     snr = snr/Constant.MAX_SNR
     rate = sig / (10**snr)
     return rate
+
+def _norm(sig, sr=16000):
+    max_bit = (1<<(sr//1000-1))-1
+    if sig.max(axis=0)>max_bit:
+        return sig*(max_bit/sig.max(axis=0))
+    else:
+        return sig
