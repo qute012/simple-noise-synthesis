@@ -9,7 +9,7 @@ You can download belows using pip.
 - zipfile
 
 ```
-pip install wget librosa numpy zipfile
+pip install .
 ```
 
 When training
