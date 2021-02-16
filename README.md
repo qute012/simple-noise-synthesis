@@ -4,7 +4,7 @@ This is noise synthesis tool. It is automatically downloaded noise in diverse en
 ## Requirements
 You can download belows using pip.
 - wget
-- librosa
+- soundfile
 - numpy
 - zipfile
 
