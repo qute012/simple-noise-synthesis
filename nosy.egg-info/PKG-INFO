@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: nosy
+Version: latest
+Summary: Simple pytorch noise synthesis transform.
+Home-page: https://github.com/qute012/simple-noise-synthesis
+Author: DeokJin Seo
+Author-email: 406023@naver.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

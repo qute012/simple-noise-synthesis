@@ -1,0 +1,5 @@
+torch
+torchaudio
+wget
+numpy
+librosa>=0.7.0
