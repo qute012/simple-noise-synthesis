@@ -6,7 +6,7 @@ You can download belows using pip.
 - wget
 - soundfile
 - numpy
-- zipfile
+- scipy
 
 ```
 pip install .
