@@ -14,7 +14,6 @@ class NoiseSynthesis(object):
         
         clean, noise = self._cut_noise(sig, noise)
         synthesized = self._synthesis(clean, noise, snr)
-        print(synthesized)
         return clean, synthesized
         
     def _process_noise_dataset(self, path='./noise_dataset'):
